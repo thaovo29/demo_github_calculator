@@ -3,6 +3,12 @@ def add(a, b):
 
 def sub(a, b):
     return a - b
+def mul(a, b):
+    return a * b
+def div(a, b):
+    if b == 0:
+        return "Error! Division by zero."
+    return a / b
 
 print("Simple Calculator")
 a = float(input("Enter first number: "))
@@ -10,3 +16,5 @@ b = float(input("Enter second number: "))
 
 print("Add:", add(a, b))
 print("Subtract:", sub(a, b))
+print("Multiply:", mul(a, b))
+print("Divide:", div(a, b))
